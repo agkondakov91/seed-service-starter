@@ -7,11 +7,12 @@ dependencies = [
     "uvicorn",
     "psycopg[binary]",
     "pydantic-settings",
+    "structlog>=26.1.0",
 ]
 
 [dependency-groups]
 dev = [
+    "httpx2>=2.16.0",
     "pytest",
-    "httpx",
     "ruff",
 ]
